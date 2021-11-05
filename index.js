@@ -233,8 +233,9 @@ Example, if getArtistByIndex is invoked with the artists array and the number 0,
 
 function getArtistByIndex(array, index) {
   /*Your Code Here*/
-  `the artist at index ${index} is ${array[index].name}`
+  return `the artist at index ${index} is ${array[index].name}`
 }
+getArtistByIndex(artists, 0);
 
 
 
@@ -249,7 +250,9 @@ If correct, the function should return ["Salvador Dali", "Frida Kahlo"]*/
 
 function get20s(array) {
   /*Your Code Here*/
-  [...array]
+ let newArr = [...array];
+
+
 }
 
 
@@ -263,8 +266,10 @@ Use removeArtist to do the following:
 
 For example, if removeArtist is invoked with the artists array and the number 0, it will remove Amedeo Modigliani from our dataset and return the number 19. */
 
-function removeArtist(/*Your Code Here*/) {
+function removeArtist(array, numIndex) {
   /*Your Code Here*/
+  array.splice(numIndex,1)
+  return array.length
 }
 
 
